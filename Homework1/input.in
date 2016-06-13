@@ -1,0 +1,4 @@
+	add	r0, r1		# r0 points to first unsorted item
+	load	r2, (r0)	# store this item in r2
+$inner_loop:			# r2 == item to insert, r0 points to vacant slot
+	cmp	r1, 0   # this is the end
